@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support · ThingsTerminal</title><meta name="description" content="Help and contact for the ThingsTerminal Android app.">
+<link rel="stylesheet" href="/style.css"></head><body><main>
+<nav><a href="/">SynapeON</a> / <a href="/mobile/">Mobile</a> / <a href="/mobile/things-terminal/">ThingsTerminal</a> / Support</nav>
+<h1>Support</h1><p class="meta">ThingsTerminal</p>
+<p>Write to <a href="mailto:support.synapeon@gmail.com">support.synapeon@gmail.com</a> with your question or problem. Please add your phone model and Android version, the device or adapter you connect to (for example the chip: FTDI, CH340, CP2102) and, if you can, what you did before the problem.</p>
+<h2>I see strange characters or ????</h2>
+<p>The speed (baud rate) or the data format of the app is different from the device. Set the same baud rate as the device uses, for example the value in the device's own code (<code>Serial.begin(9600)</code> on Arduino), with 8 data bits, no parity and 1 stop bit. In PRO, Auto detect can find the speed for you.</p>
+<h2>I connect but no data arrives</h2>
+<p>Check that TX goes to RX and RX goes to TX (they are crossed), and that the grounds (GND) of both sides are connected. Check the voltage level of the adapter (3.3 V or 5 V) and, on Arduino with SoftwareSerial, use 9600 or lower.</p>
+<h2>Words arrive in pieces on separate lines</h2>
+<p>Open Settings, Receive, and set New line to LF. The app then joins the pieces into one line.</p>
+<h2>My USB adapter is not found</h2>
+<p>Use an OTG adapter and a cable that carries data, not only power. Tap Refresh in the connection window and allow USB access when Android asks. If you chose "always open" by mistake, unplug and replug the adapter.</p>
+<h2>Bluetooth devices are not listed</h2>
+<p>Allow the Bluetooth permission, turn Bluetooth on and keep the device close. Bluetooth Classic (SPP) devices such as HC-05 must be paired in the Android Bluetooth settings first.</p>
+<h2>How do I cancel my subscription?</h2>
+<p>Open Google Play, tap your profile picture, Payments &amp; subscriptions, Subscriptions, choose ThingsTerminal and tap Cancel.</p>
+<h2>I bought PRO but it is not active</h2>
+<p>Open the PRO window in the app and tap Restore purchases, with the same Google account that bought it. If it still does not work, write to us with the order number.</p>
+<h2>Where are the other features?</h2>
+<p>The app is released step by step. New features are added in updates, so your version may have fewer features than the description of the full app. Update the app in Google Play to get new features.</p>
+<h2>How do I delete my data?</h2>
+<p>Everything is stored on your phone. Clear the app's storage in Android settings or uninstall the app.</p>
+<footer>© SynapeON · <a href="mailto:support.synapeon@gmail.com">support.synapeon@gmail.com</a></footer>
+</main></body></html>
